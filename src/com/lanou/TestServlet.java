@@ -37,8 +37,9 @@ public class TestServlet extends HttpServlet {
 			session.setAttribute("times", a);
 
 			if (session.getAttribute("times").equals(3)) {
+				
 				JPushClient jpushClient = new JPushClient("9ad748607e2d4686e236c389", "3e3d6632c02cb8a645031ea9");
-				System.out.println("==========jin=============");
+
 				PushPayload payload = PushPayload.alertAll("你好,你已经登录失败三次请勿再次登录");
 
 				try {
