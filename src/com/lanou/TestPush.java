@@ -41,7 +41,7 @@ public class TestPush extends HttpServlet{
 			}
 			if(times >=3) {
 				JPushClient client = new JPushClient("9ad748607e2d4686e236c389", "3e3d6632c02cb8a645031ea9");
-				PushPayload payLoad = PushPayload.alertAll("�����");
+				PushPayload payLoad = PushPayload.alertAll("nihao");
 				try {
 					client.sendPush(payLoad);
 				} catch (APIConnectionException e) {
